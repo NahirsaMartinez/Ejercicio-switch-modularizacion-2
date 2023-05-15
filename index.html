@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1-10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Formulario de reserva hotel</h2>
+    <fieldset>
+        <legend>Cantidad de camas</legend>
+        <select name="cant-camas" id="cant-camas">
+            <option value="1">1</option>
+            <option value="2">2</option>
+       
+
+        </select>     
+        <p id="camas-total"></p>
+    </fieldset>
+   
+    <fieldset>
+        <legend>Cantidad de días</legend>
+        <select name="cant-dias" id="cant-dias">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="7">7</option>
+        </select>
+        <p id="dias-total"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Dia de ingreso</legend>
+        <select name="dia-ingreso" id="dia-ingreso">
+            <option value="lunes">Lunes</option>
+            <option value="miercoles">Miercoles</option>
+            <option value="sabado">Sabado</option>
+        </select>
+        <p id="Ingreso-reserva"></p>
+    </fieldset>
+  
+    <fieldset>
+       <legend>Servicios adicionales</legend>
+        <select name="servicios-adicionales" id="servicios-adicionales">
+            <option value="Desayuno">desayuno</option>
+            <option value="Desayuno y Almuerzo">desayuno y almuerzo</option>
+            <option value="Desayuno almuerzo y cena"> desayuno,almuerzo y cena</option>
+        </select>
+    <p id="servicio-comida"></p> 
+   </fieldset>
+
+    <button onclick="agregarInformacion()">Actualizar informacion</button>
+   <p>Resumen de la reserva</p>
+    <fieldset>
+        <ul id="info-reserva"></ol>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+
+</html>

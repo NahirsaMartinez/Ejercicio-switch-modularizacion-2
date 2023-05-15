@@ -1,0 +1,40 @@
+body{
+    background-color: #562C2C;
+    display: grid;
+    place-content: center;
+    color: snow;
+    font-family:Helvetica, sans-serif;
+    font-weight: bolder;
+
+}
+
+fieldset{
+    border: 3px solid #0E9594;
+    background-color: #127475;
+    width: 600px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+legend{
+    letter-spacing: 1px;
+}
+
+select{
+    margin-top: 20px;
+    width: 25vh;
+    height: 4vh;
+  
+}
+
+button{
+    margin-top: 10px;
+    background-color: #f2542d;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px #f5dfbb solid;
+    border-radius: 3px;
+    height: 30px;
+}
