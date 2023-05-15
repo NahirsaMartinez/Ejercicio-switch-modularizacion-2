@@ -8,6 +8,13 @@ body{
 
 }
 
+h2{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
 fieldset{
     border: 3px solid #0E9594;
     background-color: #127475;
@@ -19,13 +26,14 @@ fieldset{
 
 legend{
     letter-spacing: 1px;
+
 }
 
 select{
     margin-top: 20px;
     width: 25vh;
     height: 4vh;
-  
+    text-align: center;
 }
 
 button{
