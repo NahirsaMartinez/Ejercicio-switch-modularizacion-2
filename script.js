@@ -1,4 +1,4 @@
-const olInformacion = document.querySelector ("#info-reserva");
+const ulInformacion = document.querySelector ("#info-reserva");
 const selectCantCamas = document.querySelector ("#cant-camas");
 const selectCantDias = document.querySelector ("#cant-dias");
 const selectDiaIngreso = document.querySelector ("#dia-ingreso");
@@ -15,7 +15,7 @@ let diaDeIngreso = 0;
 let serviciosComida = 0;
 
 function agregarInformacion(){
-    
+
     cantCamas = (selectCantCamas.value);
     cantDias = (selectCantDias.value);
     diaDeIngreso = (selectDiaIngreso.value);
@@ -26,5 +26,5 @@ function agregarInformacion(){
     pDiaIngreso.innerHTML = `El dia de ingreso es ${diaDeIngreso}`;
     pServiciosAdicionales.innerHTML = `Los servicios adicionales seleccionados son: ${serviciosComida}`;
 
-    olInformacion.innerHTML = `<li>Las cantidad de camas son ${cantCamas} <br> La cantidad de dias son ${cantDias} <br> El dia de ingreso es ${diaDeIngreso} <br> Los servicios adicionales seleccionados son: ${serviciosComida}</li>`;
+    ulInformacion.innerHTML = `<li>Las cantidad de camas son ${cantCamas} <br> La cantidad de dias son ${cantDias} <br> El dia de ingreso es ${diaDeIngreso} <br> Los servicios adicionales seleccionados son: ${serviciosComida}</li>`;
 }
