@@ -11,51 +11,23 @@
 
 <body>
     <h2>Formulario de reserva hotel</h2>
-    <fieldset>
-        <legend>Cantidad de camas</legend>
+    <div id="opciones-reserva">
+        <span>Cantidad de camas</span>
         <select name="cant-camas" id="cant-camas">
-            <option value="1">1</option>
-            <option value="2">2</option>
-       
+            <option value="1 cama">1</option>
+            <option value="2 cama">2</option>
+        </select>
+    </div>
 
-        </select>     
-        <p id="camas-total"></p>
-    </fieldset>
-   
-    <fieldset>
-        <legend>Cantidad de días</legend>
-        <select name="cant-dias" id="cant-dias">
-            <option value="1">1</option>
-            <option value="3">3</option>
-            <option value="7">7</option>
-        </select>
-        <p id="dias-total"></p>
-    </fieldset>
-    <fieldset>
-        <legend>Dia de ingreso</legend>
-        <select name="dia-ingreso" id="dia-ingreso">
-            <option value="Lunes">Lunes</option>
-            <option value="Miercoles">Miercoles</option>
-            <option value="Sabado">Sabado</option>
-        </select>
-        <p id="Ingreso-reserva"></p>
-    </fieldset>
-  
-    <fieldset>
-       <legend>Servicios adicionales</legend>
-        <select name="servicios-adicionales" id="servicios-adicionales">
-            <option value="Desayuno">desayuno</option>
-            <option value="Desayuno y Almuerzo">desayuno y almuerzo</option>
-            <option value="Desayuno almuerzo y cena"> desayuno,almuerzo y cena</option>
-        </select>
-    <p id="servicio-comida"></p> 
-   </fieldset>
+    <button onclick="enviarInformacion()">Actualizar informacion</button>
+    <br>
+    
+    <div id="info-reserva">
+        <span>Informacion de reserva</span>
+        <ul>
+        </ul>
 
-    <button onclick="agregarInformacion()">Actualizar informacion</button>
-   <p>Resumen de la reserva</p>
-    <fieldset>
-        <ul id="info-reserva"></ol>
-    </fieldset>
+    </div>
     <script src="script.js"></script>
 </body>
 
